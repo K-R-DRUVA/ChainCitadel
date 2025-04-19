@@ -1,0 +1,115 @@
+{
+    "abi": [
+        {
+            "type": "function",
+            "name": "updateStatus",
+            "inputs": [
+                {
+                    "name": "cand",
+                    "type": "address",
+                    "internalType": "address"
+                },
+                {
+                    "name": "status",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "internalType": "bool"
+                }
+            ],
+            "stateMutability": "nonpayable"
+        }
+    ],
+    "bytecode": {
+        "object": "0x",
+        "sourceMap": "",
+        "linkReferences": {}
+    },
+    "deployedBytecode": {
+        "object": "0x",
+        "sourceMap": "",
+        "linkReferences": {}
+    },
+    "methodIdentifiers": {
+        "updateStatus(address,string)": "9bab7f4a"
+    },
+    "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"cand\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"status\",\"type\":\"string\"}],\"name\":\"updateStatus\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/CrimCheck.sol\":\"ICandidateRegistration\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/CrimCheck.sol\":{\"keccak256\":\"0xf3643ebb753d271d42a7cf16a0bd24a26dddf054223357204341f98bea7f537b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5e03d1f839abd737893a9f0a42c476e04ff0fc37d4aadf15091f592d5533fe2e\",\"dweb:/ipfs/QmbTZ7BXHJ3zsR8HKR8a22Tw6T9Cq6jYVxq8BfPaoS1XBL\"]}},\"version\":1}",
+    "metadata": {
+        "compiler": {
+            "version": "0.8.17+commit.8df45f5f"
+        },
+        "language": "Solidity",
+        "output": {
+            "abi": [
+                {
+                    "inputs": [
+                        {
+                            "internalType": "address",
+                            "name": "cand",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "status",
+                            "type": "string"
+                        }
+                    ],
+                    "stateMutability": "nonpayable",
+                    "type": "function",
+                    "name": "updateStatus",
+                    "outputs": [
+                        {
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }
+                    ]
+                }
+            ],
+            "devdoc": {
+                "kind": "dev",
+                "methods": {},
+                "version": 1
+            },
+            "userdoc": {
+                "kind": "user",
+                "methods": {},
+                "version": 1
+            }
+        },
+        "settings": {
+            "remappings": [
+                "forge-std/=lib/forge-std/src/"
+            ],
+            "optimizer": {
+                "enabled": false,
+                "runs": 200
+            },
+            "metadata": {
+                "bytecodeHash": "ipfs"
+            },
+            "compilationTarget": {
+                "src/CrimCheck.sol": "ICandidateRegistration"
+            },
+            "evmVersion": "london",
+            "libraries": {}
+        },
+        "sources": {
+            "src/CrimCheck.sol": {
+                "keccak256": "0xf3643ebb753d271d42a7cf16a0bd24a26dddf054223357204341f98bea7f537b",
+                "urls": [
+                    "bzz-raw://5e03d1f839abd737893a9f0a42c476e04ff0fc37d4aadf15091f592d5533fe2e",
+                    "dweb:/ipfs/QmbTZ7BXHJ3zsR8HKR8a22Tw6T9Cq6jYVxq8BfPaoS1XBL"
+                ],
+                "license": "MIT"
+            }
+        },
+        "version": 1
+    },
+    "id": 23
+}
