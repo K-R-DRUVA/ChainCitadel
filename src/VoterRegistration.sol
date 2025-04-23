@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 import "./Interfaces.sol";
+import {console2} from "forge-std/console2.sol";
+
 
 
 contract VoterRegistration {
@@ -38,20 +40,24 @@ contract VoterRegistration {
     }
     
     function markVoted(address voter) public returns (bool) {
-        require(voters[voter].isReg, "Not registered");
+        require(!isRegistered(voter), "Voter is not registered");
         require(!voters[voter].hasVoted, "Already voted");
+        
+        if(isRegistered(voter)) {
+            console2.log("Voter is registered and marking as voted:", voter);
+        }
         
         voters[voter].hasVoted = true;
         emit VoterHasVoted(voter);
         return true;
     }
-    
     function isRegistered(address voter) public view returns (bool) {
         return voters[voter].isReg;
     }
     
     function getConstituency(address voter) public view returns (string memory) {
-        require(voters[voter].isReg, "Not registered");
+        require(voters[voter].isReg, "Not registered from getConstituency from VoterRegistration.sol");
         return voters[voter].const;
     }
 }
+//

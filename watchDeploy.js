@@ -1,7 +1,5 @@
-const fs = require('fs');
-const readline = require('readline');
-const dotenv = require('dotenv');
-
+import fs from 'fs';
+import * as readline from 'readline/promises';
 // Hardcoded path to .env file
 const envFilePath = "backend/.env";
 
@@ -16,7 +14,7 @@ if (fs.existsSync(envFilePath)) {
 const envLines = envContent.split(/\r?\n/);
 
 // Regex to match contract address output
-const regex = /(CRIMCHECK_CONTRACT_ADDRESS|CANDIDATE_REGISTRATION_CONTRACT_ADDRESS|VOTER_REGISTRATION_CONTRACT_ADDRESS|VOTING_CONTRACT_ADDRESS|ADMIN_CONTROL_CONTRACT_ADDRESS):\s*(0x[a-fA-F0-9]{40})/g;
+const regex = /(CRIMCHECK_CONTRACT_ADDRESS|CANDIDATE_REGISTRATION_CONTRACT_ADDRESS|VOTER_REGISTRATION_CONTRACT_ADDRESS|VOTING_CONTRACT_ADDRESS|ADMIN_CONTROL_CONTRACT_ADDRESS|RESULT_COMPILATION_ADDRESS):\s*(0x[a-fA-F0-9]{40})/g;
 
 const rl = readline.createInterface({
     input: process.stdin,

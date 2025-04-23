@@ -23,8 +23,6 @@ interface ICandReg {
 
 }
 
-
-
 interface ICrimCheck {
-    function verifyCriminalRecord(string memory idHash) external returns (bool);
+    function verifyCriminalRecord(address candidateAddr, string calldata idHash) external;
 }

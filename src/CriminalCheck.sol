@@ -53,7 +53,7 @@ contract CriminalCheck {
     // Submit the result after verification
     function submitResult(string memory idHash, bool hasCrimRec) public onlyVerifier {
         address cand = idToCand[idHash];
-        require(cand != address(0), "Not registered");
+        require(cand != address(0), "Not registered function from submitResult in CriminalCheck.sol");
 
         verStatus[idHash] = !hasCrimRec;
 

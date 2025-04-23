@@ -2,9 +2,11 @@
 src = "src"
 out = "out"
 libs = ["lib"] 
-
 solc_version = "0.8.17"
-
+# Increase gas limit for transactions
+gas_limit = 30000000
+# Increase the block gas limit
+block_gas_limit = 30000000
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
 [dependencies]
@@ -12,6 +14,5 @@ forge-std = ">=1.6.5"
 
 [rpc_endpoints]
 local = "http://127.0.0.1:8545"
-
 default_rpc_url = "http://127.0.0.1:8545"
 
