@@ -34,3 +34,5 @@ pnpm-debug.log*
 # Misc
 *.log
 
+"node_modules/" 
+".cache/" 
